@@ -3,6 +3,21 @@
 **Author**: Jeanette Leyva and Coriana Williams
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
+**Time Estimates**
+For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
+
+Name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: 6pm
+
+Finish time: 1130pm
+
+Actual time needed to complete: _____
+
+
+
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
@@ -34,15 +49,3 @@ We will pair program and use the driver-navigator method to ensure that both of 
 If one person is pulling all the weight, we will have an honest conversation and identify the root cause of the issue. We will come up with a plan to distribute tasks more evenly and hold each other accountable.
 If one person is taking over the project, we will have a discussion and clarify our roles and responsibilities. We will encourage open communication and respect each other's opinions and ideas.
 We will approach each other with empathy and understanding, and recognize that we both have different skill levels and learning styles. We will work together to fill any knowledge gaps and provide support and guidance when needed.
-**Time Estimates**
-For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
-
-Name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____

@@ -15,7 +15,7 @@ async function seed() {
   // location: {type: String, required: true}
 
   // *** await Model.create({...})
-  const Cat = mongoose.model('cat', catSchema);
+  const Books = mongoose.model('books', booksSchema);
 
   await Books.create({
     title: 'randomBook',

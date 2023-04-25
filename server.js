@@ -16,6 +16,8 @@ const app = express();
 // middleware
 app.use(cors());
 
+app.use(express.json());
+
 
 // define PORT validate env is working
 const PORT = process.env.PORT || 3002;
@@ -34,23 +36,59 @@ db.once('open', function () {
 });
 
 // ENDPOINTS
-app.get('/test', (request, response) => {
+app.get('/', (request, response) => {
   response.status(200).send('Welcome!');
 });
 
-// *** ENDPOINT THAT WILL RETRIEVE ALL CATS FROM THE DB ****
+// *** ENDPOINT THAT WILL RETRIEVE ALL BOOKS FROM THE DB ****
 
 app.get('/books', async (request, response, next) => {
   try {
-    // TODO: GET ALL CATS FROM DB AND SEND IT ON THE RESPONSE
+    // TODO: GET ALL BOOKS FROM DB AND SEND IT ON THE RESPONSE
     let allBooks = await Books.find({}); //Model.find({}) -> return all documents from the DB
 
-    response.status(200).send(allCats);
+    response.status(200).send(allBooks);
   } catch (error) {
     next(error);
   }
 });
 
+//THIS IS MY ENDPOINT TO ADD BOOKS TO BD LAB12
+app.post('/books', postBooks);
+
+async function postBooks(request, response, next){
+  // console.log(request.body);
+  try {
+    //TODO LAB 12: TAKE IN DATA THAT COMES IN ON REQUEST 
+    let booksData = request.body; 
+
+    //TODO LAB 12: HAVE MY MODEL CREAT NEW INSTANCE OF BOOKS TO MY DATABASE
+    let createdBooks = await Books.create(booksData); 
+
+    //TODO: SEND THAT ON THE RESPONSE 
+    response.status(200).send(createdBooks);
+   } catch (error) {
+      next(error);
+  }
+}
+
+//ENDPOINT TO DELETE A BOOK LAB 12
+app.delete('/books/:booksID', deleteBooks);
+
+async function deleteBooks (request, response, next) {
+  // console.log(request.params)
+
+  try {
+
+    let id = request.params.booksID
+
+    await Books.findByIdAndDelete(id);
+
+    response.status(200).send('Book deleted!')
+  } catch (error) {
+    next (error);
+  }
+  }
 
 app.get('*', (request, response) => {
   response.status(404).send('Not available');

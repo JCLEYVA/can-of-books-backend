@@ -25,8 +25,10 @@ const PORT = process.env.PORT || 3002;
 // LISTEN
 app.listen(PORT, () => console.log(`listening on Port ${PORT}`));
 
+
+
 // *** CONNECT MONGOOSE TO MONGODB AND BRING IT INTO MY SERVER ***
-mongoose.connect(process.env.DB_URL);
+mongoose.connect("mongodb+srv://corianacory:CAnnetteW1!@cluster0.vwjyeci.mongodb.net/?retryWrites=true&w=majority");
 
 // *** HELPFUL FOR YOU TO TROUBLESHOOT IN YOUR TERMINAL AS TO WHY YOU CAN'T CONNECT TO MONGODB ***
 const db = mongoose.connection;

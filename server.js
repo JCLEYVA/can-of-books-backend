@@ -16,6 +16,7 @@ const app = express();
 // middleware
 app.use(cors());
 
+//TODO: ADD MIDDLEWARE - BODYPARSER LAB12
 app.use(express.json());
 
 

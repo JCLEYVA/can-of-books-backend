@@ -6,17 +6,27 @@
 **Time Estimates**
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Name of feature: ________________________________
+Apr 25th 
+Name of feature: Jeanette Leyva and Coriana Williams
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 6 hrs
 
-Start time: 6pm
+Start time: 4:00 pm 
 
-Finish time: 1130pm
+Finish time: 10:00 pm 
 
-Actual time needed to complete: _____
+Actual time needed to complete: 6 hrs
 
+Apr 26th 
+Name of feature: Jeanette Leyva and Coriana Williams
 
+Estimate of time needed to complete: 6 hrs
+
+Start time: 4:00 pm 
+
+Finish time: 10:40 pm 
+
+Actual time needed to complete: 6 hrs
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
